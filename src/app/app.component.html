@@ -1,0 +1,20 @@
+<div class="container" >
+  <div *ngFor="let rowBlock of gridMap; index as r">
+    <div class="rowBlock" #container>
+      <div *ngFor="let char of rowBlock; index as c">
+        <div *ngIf="char == '#'">
+            <span class="block_wall" data-value="#" #block></span>
+        </div>
+        <div *ngIf="char == '*'">
+            <span class="block_path" data-value="*" #block></span>
+        </div>
+        <div *ngIf="char == 'E'">
+            <span class="block_entrance" data-value="E" #block></span>
+        </div>
+        <div *ngIf="char == 'M'">
+            <span class="block_mouse" data-value="M" #block></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

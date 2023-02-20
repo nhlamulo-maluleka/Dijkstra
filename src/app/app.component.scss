@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    .rowBlock {
+        display: flex;
+        $blocksize: 3rem;
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: $blocksize;
+            height: $blocksize;
+            border: 0;
+        }
+
+        .block_wall{
+            background-image: url(../assets/block.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .block_mouse{
+            background-image: url(../assets/target.gif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .block_entrance{
+            background-image: url(../assets/door.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
